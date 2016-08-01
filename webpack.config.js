@@ -13,7 +13,7 @@ module.exports = {
     module: {
         loaders: [	//加载器
             {test: /\.css$/, loader: "style!css" },
-            {test: /\.html$/, loader: "html" },
+            {test: /\.html$/, loader: "html?-minimize" },
             {test: /\.(png|jpg)$/, loader: 'url-loader?limit=8192'}
         ]
     },

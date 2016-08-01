@@ -4,8 +4,8 @@
   "description": "",
   "main": "webpack.config.js",
   "scripts": {
-	"build": "webpack",
-    "dev": "webpack-dev-server --devtool eval --progress --colors --hot --content-base build" 
+	  "build": "webpack --progress --profile --colors & http-server . -a 0.0.0.0 -p 8004 -c-1",
+    "dev": "webpack-dev-server --inline --content-base dist" 
   },
   "author": "",
   "license": "ISC",
